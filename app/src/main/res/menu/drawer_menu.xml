@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/signup_id"
+            android:title="SignUp"
+            android:icon="@drawable/signup2">
+
+        </item>
+
+        <item
+            android:id="@+id/login_id"
+            android:title="Login"
+            android:icon="@drawable/login1">
+
+        </item>
+
+        <item
+            android:id="@+id/db"
+            android:title="Database"
+            android:icon="@drawable/database">
+
+        </item>
+
+        <item
+            android:id="@+id/map_id"
+            android:title="Map"
+            android:icon="@drawable/database">
+
+        </item>
+
+    </group>
+
+    <item android:title="Admin">
+
+    <menu>
+        <item
+
+            android:title="Database"
+            android:id="@+id/dbA"
+            android:icon="@drawable/db2">
+            </item>
+
+        <item
+
+            android:title="Update"
+            android:id="@+id/update_id"
+            android:icon="@drawable/db2">
+        </item>
+    </menu>
+
+    </item>
+
+
+
+
+    </menu>
