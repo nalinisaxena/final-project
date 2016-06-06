@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nalini.navi1.CustomerInfo"
-    android:background="@drawable/c3">
+    android:background="@drawable/cinfo">
 
     <!-- TODO: Update blank fragment layout -->
 
