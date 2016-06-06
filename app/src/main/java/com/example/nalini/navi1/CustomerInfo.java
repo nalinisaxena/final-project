@@ -36,7 +36,7 @@ public class CustomerInfo extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CustomerInfo.this.getActivity(), Add.class);
+                Intent intent = new Intent(CustomerInfo.this.getActivity(), SearchContactActivity.class);
 
                 startActivity(intent);
             }

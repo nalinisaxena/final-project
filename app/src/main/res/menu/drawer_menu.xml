@@ -35,7 +35,7 @@
         <item
 
             android:title="Customer signup"
-            android:id="@+id/dbA">
+            android:id="@+id/customer_id">
             </item>
 
         <item

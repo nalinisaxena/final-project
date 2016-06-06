@@ -1,4 +1,4 @@
-package com.example.nalini.navi1;
+package com.example.nalini.navi1.test;
 
 
 import android.content.Intent;
@@ -9,16 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.nalini.navi1.Add;
+import com.example.nalini.navi1.CustomerInfo;
+import com.example.nalini.navi1.R;
+import com.example.nalini.navi1.SearchContactActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SearchContact extends Fragment {
+public class CustomerSignup extends Fragment {
 
     Button btn;
 
 
-    public SearchContact() {
+    public CustomerSignup() {
         // Required empty public constructor
     }
 
@@ -27,22 +31,25 @@ public class SearchContact extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_search_contact,
+
+
+        View rootView = inflater.inflate(R.layout.fragment_customer_signup,
                 container, false);
 
-        btn=(Button)rootView.findViewById(R.id.search_man);
+        btn = (Button) rootView.findViewById(R.id.add_id);
 
 
-        btn.setOnClickListener (new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (SearchContact.this.getActivity(), SearchContactActivity.class);
+                Intent intent = new Intent(CustomerSignup.this.getActivity(), Add.class);
 
                 startActivity(intent);
-            }});
+            }
+        });
 
         return rootView;
     }
+    }
 
 
-}

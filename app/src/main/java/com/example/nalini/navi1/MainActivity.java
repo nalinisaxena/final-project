@@ -13,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.nalini.navi1.test.CustomerSignup;
+
 
 public class MainActivity extends AppCompatActivity {
     //to test git push
@@ -76,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.main_container,new UpdateInfo());
                         fragmentTransaction.commit();
                         getSupportActionBar().setTitle("Update Here...");
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.customer_id:
+                        fragmentTransaction =getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.main_container,new CustomerSignup());
+                        fragmentTransaction.commit();
+                        getSupportActionBar().setTitle("Customer SignUp Here...");
                         item.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;

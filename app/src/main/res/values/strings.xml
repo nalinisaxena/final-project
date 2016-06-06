@@ -23,5 +23,6 @@
     <string name="userp_text">Permanent Address</string>
     <string name="usert_text">Temporary Address</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map">Map</string>
 
 </resources>
