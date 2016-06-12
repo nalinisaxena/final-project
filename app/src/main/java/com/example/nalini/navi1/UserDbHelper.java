@@ -62,7 +62,7 @@ public class UserDbHelper extends SQLiteOpenHelper {
 
     public Cursor getContact(String user_name,SQLiteDatabase sqLiteDatabase)
     {
-         String[] projection={UserContact.NewUserInfo.USER_MOB, UserContact.NewUserInfo.USER_PADDRESS,UserContact.NewUserInfo.USER_TADDRESS};
+         String[] projection={UserContact.NewUserInfo.USER_MOB,UserContact.NewUserInfo.USER_EMAIL, UserContact.NewUserInfo.USER_PADDRESS,UserContact.NewUserInfo.USER_TADDRESS};
         String selection= UserContact.NewUserInfo.USER_NAME +" LIKE ?" ;
         String[] selection_args={user_name};
         Cursor cursor=sqLiteDatabase.query(UserContact.NewUserInfo.TABLE_NAME,projection,selection,selection_args,null,null,null);

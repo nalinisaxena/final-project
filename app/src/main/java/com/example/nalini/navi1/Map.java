@@ -24,7 +24,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback{
     MarkerOptions palasia;
     MarkerOptions Bhawrkua;
     MarkerOptions Navlakha;
-    MarkerOptions GeetaBhavan;
+    MarkerOptions Airport;
     MarkerOptions Vijaynagar;
 
     static final CameraPosition Indore=CameraPosition.builder().
@@ -41,15 +41,19 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        palasia=new MarkerOptions().position(new LatLng(22.7270, 75.8810)).title("ApoloTower");
+        palasia=new MarkerOptions().position(new LatLng(22.7270, 75.8810)).title("Apollo Square,Neha");
 
-        Bhawrkua=new MarkerOptions().position(new LatLng( 22.7564132,75.88389440000003)).title("Gurjur Hospital");
+        Bhawrkua=new MarkerOptions().position(new LatLng( 22.7564132,75.88389440000003)).title("SCSIT,Neha");
 
-        Navlakha =new MarkerOptions().position(new LatLng(22.7045, 75.8737)).title(" Reliance freash ");
+        Navlakha =new MarkerOptions().position(new LatLng(22.7045, 75.8737)).title(" Reliance freash,Nidhi");
 
-        GeetaBhavan=new MarkerOptions().position(new LatLng(22.7183,75.8843)).title(" Brain Master ");
+        Airport=new MarkerOptions().position(new LatLng( 22.7284106,75.8015335)).title(" Airport ,Nidhi");
 
-        Vijaynagar=new MarkerOptions().position(new LatLng(22.7684, 75.8957)).title(" C21 Mall ");
+        Vijaynagar=new MarkerOptions().position(new LatLng(22.7684, 75.8957)).title(" C21 Mall , Priya");
+
+        palasia=new MarkerOptions().position(new LatLng(22.7270, 75.8810)).title(" Near 56 dukan,Priya");
+
+
 
         MapFragment mapFragment=(MapFragment)getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -64,7 +68,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback{
         googleMap.addMarker(palasia);
         googleMap.addMarker(Bhawrkua);
         googleMap.addMarker(Navlakha);
-        googleMap.addMarker(GeetaBhavan);
+        googleMap.addMarker(Airport);
         googleMap.addMarker(Vijaynagar);
 
         flyTo(Indore);

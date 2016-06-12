@@ -21,11 +21,7 @@
 
         </item>
 
-        <item
-            android:id="@+id/update_man"
-            android:title="Update info">
 
-        </item>
 
     </group>
 
@@ -38,12 +34,13 @@
             android:id="@+id/customer_id">
             </item>
 
-        <item
 
-            android:title="Online site"
-            android:id="@+id/update_id"
-            >
+        <item
+            android:id="@+id/update_man"
+            android:title="Update info">
+
         </item>
+
     </menu>
 
     </item>

@@ -17,7 +17,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Map"
+        android:text="@string/go_to_map"
         android:id="@+id/mapb"
         android:layout_below="@+id/list_item"
         android:layout_centerHorizontal="true"

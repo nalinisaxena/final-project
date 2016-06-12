@@ -35,7 +35,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:id="@+id/text_paddress"
-        android:text="PermanentAddress"
+        android:text="Address1 (10 AM to 5 PM)"
         android:gravity="center"
         android:textStyle="bold"/>
 
@@ -43,7 +43,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:id="@+id/text_taddress"
-        android:text="TemporaryAddress"
+        android:text="Address2 (6 PM to 9 PM)"
         android:gravity="center"
         android:textStyle="bold"/>
 

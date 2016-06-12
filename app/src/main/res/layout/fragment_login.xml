@@ -47,7 +47,8 @@
             android:layout_below="@+id/pass_lid"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="97dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:background="@android:drawable/alert_light_frame" />
 
         <EditText
             android:layout_width="150dp"

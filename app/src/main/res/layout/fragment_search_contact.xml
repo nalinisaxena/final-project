@@ -12,5 +12,6 @@
         android:text="Search"
         android:id="@+id/search_id"
         android:layout_gravity="center"
-        android:onClick="searchInfo"/>
+        android:onClick="searchInfo"
+        android:background="@android:drawable/alert_light_frame" />
 </FrameLayout>

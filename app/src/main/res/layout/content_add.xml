@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="Smart_Service_Shipment.Add"
+
     tools:showIn="@layout/activity_add"
     android:background="@drawable/bgsignup">
 
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Add New Customer Information "
+        android:text="@string/add_new_customer_information"
         android:id="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:textStyle="bold|italic" />
@@ -54,21 +54,21 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:id="@+id/newp"
         android:inputType="text"
-        android:hint="@string/userp_text"
+        android:hint="Address1 (10 AM to 5PM)"
         android:layout_below="@+id/button4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="180dp" />
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:id="@+id/newt"
         android:inputType="text"
-        android:hint="@string/usert_text"
+        android:hint="Address2 (6 PM to 9 AM)"
         android:layout_below="@+id/button4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
